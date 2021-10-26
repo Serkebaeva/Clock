@@ -5,13 +5,13 @@ const timeOutput = document.querySelector(".time");
 const dateOutput = document.querySelector(".date");
 
 const days = [
-  "Июнь",
+  "Воскресенье",
   "Понедельник",
   "Вторник",
   "Среда",
   "Четверг",
   "Пятница",
-  "Суббота",
+  "Субота",
 ];
 const months = [
   "Январь",
@@ -46,7 +46,7 @@ function setTime() {
     360
   )}deg)`; //заводим новую перемнную(функцию) Scale, чтобы определить и дать команду стрелкам спускаться на определенные градусы, чтобы было точно по цифрам...
 
-  minuteArrow.style.transform = `translate(-50% -100%) rotate(${scale(
+  minuteArrow.style.transform = `translate(-50%, -100%) rotate(${scale(
     minutes,
     0,
     59,
@@ -54,7 +54,7 @@ function setTime() {
     360
   )}deg)`;
 
-  secondsArrow.style.transform = `translate(-50% -100%) rotate(${scale(
+  secondsArrow.style.transform = `translate(-50%, -100%) rotate(${scale(
     seconds,
     0,
     59,
