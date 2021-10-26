@@ -18,7 +18,7 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  background-color: burlywood;
+  background-color: rgb(218, 195, 165);
 }
 
 .arrow {
@@ -43,7 +43,7 @@ body {
 .arrow.second {
   transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
-  background-color: blueviolet;
+  background-color: red;
 }
 
 .center {
@@ -54,7 +54,7 @@ body {
     -50%,
     -50%
   ); /* именно трансформ поставить элемент ровно посередине*/
-  background-color: blueviolet;
+  background-color: red;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -93,9 +93,10 @@ body {
   color: white;
   width: 18px;
   height: 18px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  display: inline-flex;
   font-size: 12px;
   line-height: 18px;
+  border-radius: 50%;
 }
